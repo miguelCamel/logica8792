@@ -6,10 +6,10 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
- int a = 6;
- int b = 5;
+ float a = 2.5;
+ float b = 7.3;
 
- printf("O resultado da soma é: %d\n", (a + b));
+ printf("O resultado da soma é: %f\n", (a + b));
 
  
     return 0;
