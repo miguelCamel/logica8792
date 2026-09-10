@@ -6,11 +6,15 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
- float a = 2.5;
- float b = 7.3;
+int numero;
 
- printf("O resultado da soma é: %f\n", (a + b));
 
+printf("Digite um número: ");
+
+scanf("%d", &numero);
+
+printf("o dobro é: %d\n", numero *2 );
  
+
     return 0;
 }
