@@ -6,14 +6,13 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-int numero;
-
+float numero;
 
 printf("Digite um número: ");
 
-scanf("%d", &numero);
+scanf("%f", &numero);
 
-printf("o dobro é: %d\n", numero *2 );
+printf("Resultado: %f\n", numero * 3 );
  
 
     return 0;
