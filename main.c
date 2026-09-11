@@ -8,13 +8,21 @@ int main(){
     SetConsoleOutputCP(65001);
 
 int n;
+char sim;
+char não;
 
 printf("Digite um número: ");
 scanf("%d", &n);
 
-printf("Antecessor: %d\n",n - 1);
+printf("Você deseja saber o antecessor?");
+scanf("%d");
+if (&sim){
 
-printf("Sucessor: %d\n", n + 1);
+    printf("Antecessor: %d\n", n - 1);
+
+   if  }(else) &não;
+     printf("Ok, Boa noite!");
+    
     
 
 
