@@ -9,7 +9,7 @@ int main(){
 
 int n;
 char sim;
-char não;
+char nao;
 
 printf("Digite um número: ");
 scanf("%d", &n);
@@ -17,13 +17,12 @@ scanf("%d", &n);
 printf("Você deseja saber o antecessor?");
 scanf("%d");
 if (&sim){
+printf("Antecessor: %d\n", n - 1);
 
-    printf("Antecessor: %d\n", n - 1);
-
-   if  }(else) &não;
+ }else (&nao);
+scanf("%d");
      printf("Ok, Boa noite!");
-    
-    
+
 
 
 
