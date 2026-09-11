@@ -6,14 +6,35 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-float numero;
+    int numero = 18;
+    printf("Qual sua idade: ");
+    scanf("%d", &numero);
+    if (numero >= 18) {
+       
+     printf("Você é Maior de Idade");
+    }
+      else {
 
-printf("Digite um número: ");
+        printf("Você é Menor de idade");
 
-scanf("%f", &numero);
+      
 
-printf("Resultado: %f\n", numero * 3 );
- 
+
+ return 0;
+    }
+
+
+
+
+    
+
+     
+
+       
+
+    
+       
+    
 
     return 0;
 }
