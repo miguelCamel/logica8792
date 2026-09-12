@@ -6,12 +6,16 @@ int main(){
 SetConsoleCP(65001);
 SetConsoleOutputCP(65001);
 
-float raio;
-const float PI = 3.14159;
+int n;
 
-printf("Digite o raio do círculo: ");
-scanf("f", &raio);
-printf("Area: %.2f\n", 2 * PI * raio);
+printf("Digite um número: ");
+scanf("%d", &n);
+
+if(n > 0){
+    printf("Positivo\n");
+}else
+ printf("Negativo\n");
+
 
 
 
