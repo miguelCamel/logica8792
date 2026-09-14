@@ -4,24 +4,23 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n;
-printf("Digite um número: ");
-scanf("%d", &n);
+float n;
+int idade;
 
-if(n % 2 == 0){
-    printf("Par");
+printf("Digite sua idade: ");
+scanf("%d", &idade);
+
+if(idade >= 50){
+    printf("Você é Senior");
+
+}else if(idade >= 18){
+printf("Você é maior de idade");
+}else if(idade >= 12){
+    printf("Você é adolescente");
+}else if(idade >= 9){
+    printf("Você é pré-adolescente");
 }else
-    printf("Impar");
-
-
-
-
-
-
-
-
-
-
-
+    printf("Você é criança");
+    
     return 0;
 }
