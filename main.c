@@ -4,9 +4,9 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-float n1, n2;
-int opcao;
-
+int n;
+printf("Digite um número: ");
+scanf("%d", &n);
 printf("%s", n > 0 ? "Positivo" : (n < 0 ? "Negativo" : "Zero"));
     
 
