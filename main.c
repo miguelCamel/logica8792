@@ -4,17 +4,20 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n1, n2, n3, maior;
+int a, b, c, d, e, maior;
 
-printf("Digite três números: ");
-scanf("%d %d %d", &n1, &n2, &n3);
+printf("Digite cinco número: ");
+scanf("%d %d %d %d %d ", &a, &b, &c, &d, &e);
 
-maior = n1;
+maior = a;
 
-if(n2 > maior) maior = n2;
-if(n3 > maior) maior = n3;
+if(b > maior) maior = b;
+if(c > maior) maior = c;
+if(d > maior) maior = d;
+if(e > maior) maior = e;
 
-printf("Maior: %d", maior);
+printf("O maior número é: %d", maior);
 
-    return 0;
+return 0;
+
 }
