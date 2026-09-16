@@ -4,28 +4,27 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n1, n2, n3;
-float media;
-float freq;
+int diaDaSemana;
 
-printf("Digite a nota 1: ");
-scanf("%d", &n1);
+printf("Digite um número de (1 a 7): ");
+scanf("%d", &diaDaSemana);
 
-printf("\nDigite a nota 2: ");
-scanf("%d", &n2);
-
-printf("\nDigite a nota 3: ");
-scanf("%d", &n3);
-
-media = (n1 + n2 + n3) / 3;
-
-printf("Digite a frequência (em números apenas): ");
-scanf("%f", &freq);
-if((media >= 7) && (freq >= 75)){
-    printf("\nAprovado com sucesso!");
-
+if(diaDaSemana == 1){
+    printf("Domingo!");
+}else if(diaDaSemana == 2){
+printf("Segunda-feira");
+}else if(diaDaSemana == 3){
+    printf("Terça-feira");
+}else if(diaDaSemana == 4){
+    printf("Quarta-feira");
+}else if(diaDaSemana == 5){
+    printf("Quinta-feira");
+}else if(diaDaSemana == 6){
+    printf("Sexta-feira");
+}else if(diaDaSemana == 7){
+    printf("Sábado!");
 }else{
-    printf("\nReprovado com sucesso!");
+printf("Valor inválido!");
 }
 
 return 0;
