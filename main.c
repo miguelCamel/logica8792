@@ -31,6 +31,9 @@ switch(dia){
     case 7:
     printf("Sabado!");
     break;
+    default:
+    printf("Número Invalido!");
+    break;
 }
 
 return 0;
