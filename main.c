@@ -10,14 +10,14 @@ float altura;
 printf("Bem vindos ao brinquedo roleta da morte!");
 printf("\nQual sua idade?: ");
 scanf("%d", &idade);
-printf("Qual sua altura?: ");
-scanf("%f", &altura);
+printf("\nQual sua altura?: ");
+scanf("%d", &altura);
 
-if((idade >= 18) && (altura >= 1.60)){
+if((idade >= 18) || (altura >= 1.60)){
     printf("Você pode brincar na roleta!");
 
 }else{
-    printf("Você não pode brincar na roleta!");
+    printf("Você não pode brincar");
 }
-return 0;
+
 }
