@@ -5,24 +5,19 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-float n1, n2, n3, media;
+float a, b, c;
 
-printf("Digite sua nota 1: ");
-scanf("%f", &n1);
+printf("Digite os três lados do triângulo: ");
+scanf("%f %f %f", &a, &b, &c);
 
-printf("Digite sua nota 2: ");
-scanf("%f", &n2);
-printf("Digite sua nota 3: ");
-scanf("%f", &n3);
-
-media = (n1 + n2 + n3) / 3;
-
-if(media >= 6.0){
-    printf("Você foi aprovado!");
-}else if(media >= 5.0){
-    printf("Você está de recuperação!");
+if(a == b && b == c){
+    printf("Equilatero!\n");
+}else if(a == b || a == c || b == c){
+    printf("Isosceles!\n");
 }else{
-    printf("Você reprovou!");
+    printf("Escaleno\n");
+
 }
+
 return 0;
 }
