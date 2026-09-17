@@ -5,36 +5,24 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int dia;
-printf("Digite um número de 1 a 7: ");
-scanf("%d", &dia);
+float n1, n2, n3, media;
 
-switch(dia){
-    case 1:
-    printf("Domingo!");
-    break;
-    case 2:
-    printf("Segunda!");
-    break;
-    case 3:
-    printf("Terça!");
-    break;
-    case 4:
-    printf("Quarta!");
-    break;
-    case 5:
-    printf("Quinta!");
-    break;
-    case 6:
-    printf("Sexta!");
-    break;
-    case 7:
-    printf("Sabado!");
-    break;
-    default:
-    printf("Número Invalido!");
-    break;
+printf("Digite sua nota 1: ");
+scanf("%f", &n1);
+
+printf("Digite sua nota 2: ");
+scanf("%f", &n2);
+printf("Digite sua nota 3: ");
+scanf("%f", &n3);
+
+media = (n1 + n2 + n3) / 3;
+
+if(media >= 6.0){
+    printf("Você foi aprovado!");
+}else if(media >= 5.0){
+    printf("Você está de recuperação!");
+}else{
+    printf("Você reprovou!");
 }
-
 return 0;
 }
