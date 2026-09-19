@@ -1,11 +1,10 @@
 #include<stdio.h>
-#include<string.h>
 #include<windows.h>
  
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-char resposta[3];
+char resposta;
 
 printf("Bem vindo ao quiz!!!\n");
 printf("1-Você esta fazendo um trabalho em grupo e todo mundo começa a discutir. O que voce faria?\n");
