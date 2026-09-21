@@ -3,13 +3,23 @@
 #include<string.h>
 
 int main(){
+
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-for(int i = 0; i < 10; i++){
-    printf("%s\n %d", "\nOs números estão aumentando: --->>", i);
-    
-}
-printf("\nMeu For funciounou!!!");
-return 0;
+char frutas[3][20] ={"Maçã", "Banana", "Laranja"};
+
+printf("%s\n", frutas[0]);
+printf("%s\n", frutas[1]);
+printf("%s\n", frutas[2]);
+
+
+
+
+
+
+
+
+
+    return 0;
 }
