@@ -6,11 +6,8 @@ int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int numero[3];
-numero[0] = 10;
-numero[1] = 20;
-numero[2] = 30;
+int numeros[] = {10,20, 30};
 
-printf("%d", numero[2]);
+printf("%zu", sizeof(numeros));
     return 0;
 }
