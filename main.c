@@ -7,7 +7,8 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 int numeros[] = {10,20, 30};
+int lenght = sizeof(numeros) / sizeof(numeros[0]);
 
-printf("%zu", sizeof(numeros));
+printf("%d", lenght);
     return 0;
 }
