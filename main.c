@@ -2,22 +2,23 @@
 #include<windows.h>
 #include<string.h>
 
-void tabuada(int n){
-    printf("Tabuada do %d\n", n);
+int tabuada(int n){
+    int resultado;
+    printf("Tabuada do %d:\n", n);
     for(int i = 1; i <= 10; i++){
-        printf("%d x %d = %d\n", n, i, n * i);
-
+        resultado = n * i;
+        printf("%d x %d = %d\n", n, i, resultado);
     }
+    return resultado;
 }
-
-
 
 int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-tabuada(7);
+int ultimo = tabuada(7);
+printf("ùltimo valor da tabuada: %d\n", ultimo);
 
 
 
