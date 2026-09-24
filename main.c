@@ -4,10 +4,15 @@
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
+int n, soma = 0;
 
-for(int i = 0; i <= 50; i += 2){
-    printf("%d\n", i);
+printf("Digite um número: ");
+scanf("%d", &n);
+
+for(int i = 0; i <= n; i++){
+   soma += i;
 }
+printf("O resultado da soma é: %d\n", soma);
 
     return 0;
 }
