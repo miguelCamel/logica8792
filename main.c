@@ -5,14 +5,8 @@ int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-int contador = 1;
-
-while(contador <= 50){
-    if(contador % 2 == 0){
-    printf("%d\n", contador);
-    contador++;
-    }
-    contador++;
+for(int i = 0; i <= 50; i += 2){
+    printf("%d\n", i);
 }
 
     return 0;
