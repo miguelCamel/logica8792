@@ -2,14 +2,12 @@
 #include<windows.h>
 #include<string.h>
 
-int tabuada(int n){
-    int resultado;
-    printf("Tabuada do %d:\n", n);
-    for(int i = 1; i <= 10; i++){
-        resultado = n * i;
-        printf("%d x %d = %d\n", n, i, resultado);
+void verificarEhParImpar(int n){
+    if(n % 2 == 0){
+        printf("%d é par!\n", n);
+    }else{
+        printf("%d é ímpar\n", n);
     }
-    return resultado;
 }
 
 int main(){
@@ -17,12 +15,8 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int ultimo = tabuada(7);
-printf("ùltimo valor da tabuada: %d\n", ultimo);
-
-
-
-
+verificarEhParImpar(10);
+verificarEhParImpar(7);
 
 
 
