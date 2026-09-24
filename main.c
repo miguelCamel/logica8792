@@ -5,16 +5,15 @@ int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-int numero, soma = 0;
+int contador = 1;
 
-printf("Digite número para somar (0 encerra): ");
-scanf("%d", &numero);
-
-while(numero != 0){
-    soma += numero;
-    scanf("%d", &numero);
+while(contador <= 50){
+    if(contador % 2 == 0){
+    printf("%d\n", contador);
+    contador++;
+    }
+    contador++;
 }
-printf("Soma total = %d\n", soma);
 
     return 0;
 }
