@@ -4,21 +4,20 @@
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
-int n, log;
 
+    int n;
+    float valor, soma = 0;
 
-printf("Digite um número: ");
-scanf("%d", &n);
+    printf("Quantos números deseja digitar: ");
+    scanf("%d", &n);
 
-for(int i = 1; i <= 10; i++){
-    printf("%d\n", n * i);
-}
-log = n * n;
-printf("O Resultado é: %d", log);
-
-
-
-
+    for(int i = 0; i < n; i++){
+        printf("Digite o número %d: ", i + 1);
+        scanf("%f", &valor);
+        soma += valor;
+    
+    }
+    printf("Média: %.2f\n", soma / n);
 
 
 
