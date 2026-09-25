@@ -1,23 +1,46 @@
 #include<stdio.h>
 #include<windows.h>
 
-int ehPrimo(int n){
-    if(n < 2)return 0;
-    for(int i = 2; i < n; i++){
-        if(n % i == 0) return 0;
+int main(){
+SetConsoleOutputCP(65001);
+SetConsoleCP(65001);
+int n, soma = 0;
+printf("Digite um número: ");
+scanf("%d", &n);
+for(int i = 1; i < n; i++){
+    if(n % i == 0){
+        soma += i;
     }
-    return 1;
+}
+if(soma == n){
+    printf("%d é um número perfeito\n", n);
+}else{
+    printf("%d Não é um número perfeito\n", n);
 }
 
-int main(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
-    int numero;
-    printf("Digite um número: ");
-    scanf("%d", &numero);
-    if(ehPrimo(numero))
-        printf("%d é primo\n", numero);
-    else
-    printf("%d não é primo\n", numero);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return 0;
 }
