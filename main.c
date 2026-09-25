@@ -4,21 +4,19 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n, soma = 0;
+int n, divisao, log;
+
 printf("Digite um número: ");
 scanf("%d", &n);
-for(int i = 1; i < n; i++){
-    if(n % i == 0){
-        soma += i;
-    }
-}
-if(soma == n){
-    printf("%d é um número perfeito\n", n);
-}else{
-    printf("%d Não é um número perfeito\n", n);
-}
 
+while(n != 0){
+    divisao = n % 10;
+    log = log * 10 + divisao;
+    n  /= 10;
+    
 
+}
+printf("%d", log);
 
 
 
