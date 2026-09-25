@@ -4,16 +4,23 @@
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
-int n;
-long long fatorial = 1;
+int n, log;
+
 
 printf("Digite um número: ");
 scanf("%d", &n);
 
-for(int i = 1; i <= n; i++){
-    fatorial *= i;
+for(int i = 1; i <= 10; i++){
+    printf("%d\n", n * i);
 }
-printf("Fatorial: %lld\n", fatorial);
+log = n * n;
+printf("O Resultado é: %d", log);
+
+
+
+
+
+
 
     return 0;
 }
