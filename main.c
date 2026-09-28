@@ -4,41 +4,20 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n, divisao, log;
 
-printf("Digite um número: ");
-scanf("%d", &n);
+int tabuada, n;
 
-while(n != 0){
-    divisao = n % 10;
-    log = log * 10 + divisao;
-    n  /= 10;
-    
+for(int m = 1; m <= 10; m++){
+for(int i = 1; i <= 10; i++){
+    printf("%d x %d = %d\n", m, i, i * m);
+
+
 
 }
-printf("%d", log);
+printf("\n");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
     return 0;
 }
