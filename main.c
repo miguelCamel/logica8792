@@ -7,9 +7,9 @@ SetConsoleCP(65001);
 
 int tabuada, n;
 
-for(int m = 1; m <= 10; m++){
-for(int i = 1; i <= 10; i++){
-    printf("%d x %d = %d\n", m, i, i * m);
+for(int m = 1; m <= 5; m++){
+for(int i = 1; i <= 5; i++){
+    printf("For externo e interno: %d %d\n", i, m);
 
 
 
