@@ -4,21 +4,17 @@
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
+int n;
 
+printf("De que tamanho será o quadrado: ");
+scanf("%d", &n);
 
-int contador = 0;
-
-
-for( int i = 0; i <= 9; i++){
-    for(int j = 0; j <= 9; j++ ){
-        for(int m = 0; m <= 9; m++){
-            for(int a = 0; a <= 9; a++){
-                contador++;
-                 printf("Combinação: %d %d %d %d\n", i, j, m, a);
-                    }
-                        }
-                            } 
-                                }
-                                printf("Há: %d", contador);
-    return 0;
+for(int i = 1; i <= n; i++){
+    for(int j = 1; j <= n; j++){
+        printf("* ");
+    }
+ printf("\n");
+}
+ 
+ return 0;
 }
