@@ -8,12 +8,11 @@ SetConsoleCP(65001);
 
 int voto;
 
-printf("10-Manoel\n 20-Carla\n 30-Bianca\n 40-Henrique\n 50-Bruno\n");
-printf("DIGITE SEU VOTO AGORA:");
+printf("10-Manoel\n 20-Carla\n 30-Bianca\n 40-Henrique\n 50-Bruno\nDIGITE SEU VOTO AGORA: ");
 scanf("%d", &voto);
 
 if(voto == 10){
-    printf("VOTO ARMAZENADO. CADIDATO: MANOEL");
+    printf("VOTO ARMAZENADO. CANDIDATO: MANOEL");
 }else if(voto == 20){
     printf("VOTO ARMAZENADO. CANDIDATA: CARLA");
 }else if(voto == 30){
@@ -23,7 +22,7 @@ if(voto == 10){
 }else if(voto == 50){
     printf("VOTO ARMAZENADO. CANDIDATO: BRUNO");
 }else{
-printf("VOTO ARMAZENADO. CANDIDATO: NULO");
+printf("VOTO ARMAZENADO NULO");
 }
 
     return 0;
