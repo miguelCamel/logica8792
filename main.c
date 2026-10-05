@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<windows.h>
 
-void num(){
-    printf("Seja bem vindo!!");
-
+char* saudacao(){
+    return "Olá, seja bem-vindo(a)!";
 }
 
 int main(){
 
-num();
+SetConsoleOutputCP(65001);
+SetConsoleCP(65001);
 
-
+printf("%s\n", saudacao());
 
 
 
