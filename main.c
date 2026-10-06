@@ -1,29 +1,50 @@
 #include<stdio.h>
 #include<windows.h>
 
+int votosA = 0;
+int votosB = 0;
+int votosNulos = 0;
+
+void votar(int numero){
+    if(numero == 1){
+        votosA++;
+        printf("Você votou no candidato A.\n");
+    }else if(numero == 2){
+        votosB++;
+        printf("Você votou no candidato B.\n");
+    }else{
+        votosNulos++;
+        printf("Voto Nulo.\n");
+    }
+}
+void resultado(){
+    printf("\n===== Resultado da votação =====\n");
+    printf("Candidato A: %d voto\n", votosA);
+    printf("Candidato B: %d votos\n", votosB);
+    printf("Nulos: %d votos\n", votosNulos);
+
+    if(votosA == 0 && votosB == 0 && votosNulos > 0){
+        printf(">>> Candidato A venceu!\n");
+    }else if(votosB > votosA){
+        printf(">>> Candidato B venceu!\n");
+    }else{
+        printf(">>> Empate!\n");
+    }
+}
+
 int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-
 int voto;
-
-printf("10-Manoel\n 20-Carla\n 30-Bianca\n 40-Henrique\n 50-Bruno\nDIGITE SEU VOTO AGORA: ");
-scanf("%d", &voto);
-
-if(voto == 10){
-    printf("VOTO ARMAZENADO. CANDIDATO: MANOEL");
-}else if(voto == 20){
-    printf("VOTO ARMAZENADO. CANDIDATA: CARLA");
-}else if(voto == 30){
-    printf("VOTO ARMAZENADO. CANDIDATA: BIANCA");
-}else if(voto == 40){
-    printf("VOTO ARMAZENADO. CANDIDATO: HENRIQUE");
-}else if(voto == 50){
-    printf("VOTO ARMAZENADO. CANDIDATO: BRUNO");
-}else{
-printf("VOTO ARMAZENADO NULO");
+int totalEleitores = 10;
+for(int i = 0; i < totalEleitores; i++){
+    printf("Eleitor %d - Digite 1 para A, 2 para B: ", i + 1);
+    scanf("%d", &voto);
+    votar(voto);
 }
+resultado();
+
 
     return 0;
 }
