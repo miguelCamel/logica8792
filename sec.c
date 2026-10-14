@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<windows.h>
 
-float a, b;
 
-void som(){
-    printf(" %f + %f", a + b);
+
+float som(float a, float b){
+   return a + b;
 }
 
 
@@ -13,15 +13,15 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-
+float d, c;
 
 printf("Digite o primeiro número: ");
-scanf("%f", &a);
+scanf("%f", &d);
 
 printf("Digite o segundo número: ");
-scanf("%f", &b);
+scanf("%f", &c);
 
-som();
+printf("%.2f + %.2f = %.2f",d, c,  som(d, c));
 
 
 
