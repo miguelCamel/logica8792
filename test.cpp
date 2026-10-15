@@ -1,18 +1,28 @@
 #include<iostream>
+#include<windows.h>
+
+int soma(int f, int g){
+
+    return f + g;
+    
+}
 
 int main(){
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
 
 
-float a;
+int a, b;
 
-std::cout << "Digite um numero: "<<std::endl;
+std::cout << "Digite o primeiro número:  "<<std::endl;
 std::cin >> a;
 
-if(a >= 18){
-    std::cout<< "Você é maior de idade"<<std::endl;
-}else{
-    std::cout<< "Você é menor de idade"<<std::endl;
-}
+std::cout << "Digite o segundo número: "<<std::endl;
+std::cin >> b;
+
+std::cout<< a << "+" << b << "=" << soma(a, b) <<std::endl;
+
+
 return 0;
 
 }
