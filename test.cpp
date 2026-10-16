@@ -2,24 +2,35 @@
 #include<windows.h>
 #include<string>
 
+struct pessoa{
+    char nome[50];
+    int idade;
+    float altura;
+    float peso;
+};
+
 
 
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-int escolha;
 
-std::cout<< "Você deseja ver o alfabeto? [1]Sim [2]Não"<<std::endl;
-std::cin>> escolha;
+struct pessoa p1;
+std::cout<<"Digite seu nome: "<<std::endl;
+std::cin>> p1.nome;
 
-if(escolha == 1){
-    std::cout<<"A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y e Z"<<std::endl;
-}else if(escolha == 2){
-    std::cout<< "Ok, tenha um bom dia"<<std::endl;
-}else{
-    std::cout<<"Apenas 1 ou 2"<<std::endl;
-}
+std::cout<< "Digite sua idade: "<<std::endl;
+std::cin>> p1.idade;
+
+std::cout<< "Digite sua altura: "<<std::endl;
+std::cin>> p1.altura;
+
+std::cout<<"Digite seu peso: "<<std::endl;
+std::cin>> p1.peso;
+
+std::cout<<"Nome: " << p1.nome << "\n" << "Idade: " << p1.idade << "\n" << "Altura: " << p1.altura << "\n" << "Peso: " << p1.peso<<std::endl;
+
 
 return 0;
 
