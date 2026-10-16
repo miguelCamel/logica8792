@@ -2,7 +2,7 @@
 #include<windows.h>
 #include<string>
 
-struct pessoa{
+struct Pessoa{
     char nome[50];
     int idade;
     float altura;
@@ -16,9 +16,9 @@ int main(){
     SetConsoleCP(65001);
 
 
-struct pessoa p1;
+struct Pessoa p1;
 std::cout<<"Digite seu nome: "<<std::endl;
-std::cin>> p1.nome;
+std::fgets(p1.nome, sizeof(p1.nome), stdin);
 
 std::cout<< "Digite sua idade: "<<std::endl;
 std::cin>> p1.idade;
@@ -29,7 +29,7 @@ std::cin>> p1.altura;
 std::cout<<"Digite seu peso: "<<std::endl;
 std::cin>> p1.peso;
 
-std::cout<<"Nome: " << p1.nome << "\n" << "Idade: " << p1.idade << "\n" << "Altura: " << p1.altura << "\n" << "Peso: " << p1.peso<<std::endl;
+std::cout<<"Nome: " << p1.nome << "Idade: " << p1.idade << "\n" << "Altura: " << p1.altura << "\n" << "Peso: " << p1.peso<<std::endl;
 
 
 return 0;

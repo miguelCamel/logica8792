@@ -17,7 +17,7 @@ SetConsoleCP(65001);
 
 struct Pessoa p1;
 printf("--- Bem vindo a academia Reis ---");
-printf("\n");
+fgets(p1.nome, sizeof(p1.nome), stdin);
 
 printf("Qual seu nome: ");
 scanf("%s", p1.nome);
