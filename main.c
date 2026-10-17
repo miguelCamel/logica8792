@@ -9,15 +9,16 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int n, soma = 0;
+int n;
 printf("Digite N: ");
 scanf("%d", &n);
 
-for(int i = 1; i <= n; i++){
-    soma += i;
-    soma -= 1;
-    printf("\nO resultado %d + %d = %d", soma, i, soma + i);
+if(n < 0){
+    printf("Apenas positivos!");
+}else{
+    for(int i = 1; i <= n; i++){
+  printf("O resultado de %d x %d = %d\n", n, i, n * i);
+    }
 }
-
 return 0;
 }
