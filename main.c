@@ -11,17 +11,14 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int idade;
-int temIngresso;
-printf("Digite sua idade: ");
-scanf("%d", &idade);
-printf("Possui ingresso? (1 - Sim / 0 - Não)");
-scanf("%d", &temIngresso);
+int n;
 
-if(idade >= 18 && temIngresso){
-  printf("Entrada permitida!\n");
-}else{
-  printf("Entrada não permitada!\n");
+printf("  --- CONTAGEM REGRESSIVA ---\n ");
+printf("Digite um número: ");
+scanf("%d", &n);
+
+for(int i = n; i >= 0; i--){
+  printf("%d\n", i);
 }
 return 0;
 }
