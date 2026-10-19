@@ -4,13 +4,19 @@
 
 
 
+
+
 int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-for(int i = 1; i <= 5; i++){
-  printf("%d- Programar\n", i);
+int contador = 1;
+
+while(contador <= 10){
+  printf("%d\n", contador);
+  contador++;
 }
+
 return 0;
 }
