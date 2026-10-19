@@ -11,11 +11,11 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int contador = 1;
+int contador = 10;
 
-while(contador <= 10){
+while(contador >= 1){
   printf("%d\n", contador);
-  contador++;
+  contador--;
 }
 
 return 0;
