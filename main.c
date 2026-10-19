@@ -16,9 +16,9 @@ int n;
 printf("  --- CONTAGEM REGRESSIVA ---\n ");
 printf("Digite um número: ");
 scanf("%d", &n);
-
-for(int i = n; i >= 0; i--){
-  printf("%d\n", i);
+while(n >= 0){
+  printf("%d\n", n);
+  n--;
 }
 return 0;
 }
