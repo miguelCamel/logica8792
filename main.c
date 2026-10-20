@@ -11,22 +11,15 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int numero, pares = 0;
-printf("Digite um número(0 para sair): ");
-scanf("%d", &numero);
-while(numero != 0){
-  if(numero % 2 == 0){
-    pares++;
-  }
-  
-printf("Digite um número (0 para sair): ");
-scanf("%d", &numero);
- 
-  
-  
-  
+int senha = 2018;
+int tentativa;
+printf("Digite a senha: ");
+scanf("%d", &tentativa);
+while(tentativa != senha){
+printf("SENHA INCORRETA TENTE NOVAMENTE: ");
+scanf("%d", &tentativa);
 }
+printf("Acesso liberado!\n");
 
-printf("Quantidade de pares: %d\n", pares);
 return 0;
 }
