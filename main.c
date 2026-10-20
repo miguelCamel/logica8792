@@ -11,14 +11,13 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int n;
+int n = 1;
+int soma = 0;
 
-printf("  --- CONTAGEM REGRESSIVA ---\n ");
-printf("Digite um número: ");
-scanf("%d", &n);
-while(n >= 0){
-  printf("%d\n", n);
-  n--;
+while(n <= 100){
+  soma = n + n;
+  printf("%d + %d = %d\n", n, n, soma);
+  n++;
 }
 return 0;
 }
