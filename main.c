@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<windows.h>
+#include<windows.h> 
 #include<string.h>
 
 int func(int a, int b){
@@ -14,13 +14,14 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int n;
+float nota;
 do{
-    printf("Digite um número (não negativo): ");
-    scanf("%d", &n);
-}while(n < 0);
+    printf("Digite uma nota (0 a 10): ");
+    scanf("%f", &nota);
+}while(nota < 0 || nota > 10);
+printf("Nota Válida: %.1f\n", nota);
+ 
 
-printf("Você digitou: %d\n", n);
 
 
 return 0;
