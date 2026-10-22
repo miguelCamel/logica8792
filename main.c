@@ -14,13 +14,13 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int numero, soma = 0;
+int idade;
+
 do{
-    printf("Digite um número (0 para parar): ");
-    scanf("%d", &numero);
-    soma += numero;
-}while(numero != 0);
-printf("Soma: %d\n", soma);
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+}while(idade <= 0 || idade >= 120 );
+printf("Acesso liberado!");
 
 return 0;
 }
