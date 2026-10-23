@@ -13,24 +13,26 @@ int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int opcao;
+int n;
 
-do{
-    printf("\n--- MENU ---");
-    printf("1 - Dizer olá\n");
-    printf("2 - Dizer tchau\n");
-    printf("0 - Sair\n");
-    printf("Escolha: ");
-    scanf("%d", &opcao);
-    if(opcao == 1){
-        printf("Olá\n");
-    }else if(opcao == 2){
-        printf("Tchau!");
-    }else if(opcao != 0){
-        printf("Opçâo inválida!\n");
-    }
-}while(opcao != 0);
-printf("Até mais\n");
+printf("Digite um número de 1 a 3: ");
+scanf("%d", &n);
+
+switch(n){
+    case 1:
+    printf("Seu número é: Um");
+    break;
+    case 2:
+    printf("Seu número é: Dois");
+    break;
+    case 3:
+    printf("Seu número é: Três");
+    break;
+    default:
+    printf("Digite apenas número válidos!");
+    break;
+}
+
 
 return 0;
 }
