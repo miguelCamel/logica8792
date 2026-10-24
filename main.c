@@ -2,45 +2,86 @@
 #include<windows.h> 
 #include<string.h>
 
-int func(int a, int b){
-    return a + b;
+#define QTD 5
+void cadastrar(float notas[]){
+    for(int i = 0; i < QTD; i++){
+        printf("Digite a nota do aluno %d: ", i + 1);
+        scanf("%d", &notas[i]);
+    }
 }
-
-
-
-
+void mostrar(float notas[]){
+    for(int i = 0; i < QTD; i++){
+        printf("Alnuo: %d: %.1f\n", i + 1);
+        scanf("%d", &notas[i]);
+    }
+}
+float calcularMedia(float notas[]){
+    float soma = 0;
+    for(int i = 0; i < QTD; i++){
+        soma += notas[i];
+    }
+    return soma / QTD;
+}
+float maiorNota(float notas[]){
+    float maior = notas[0];
+    for(int i = 1; i < QTD; i++){
+        if(notas[i] > maior){
+            maior = notas[i];
+        }
+    }
+    return maior;
+}
 int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n; 
+float notas[QTD];
+int opcao;
+int cadastrado = 0;
 
-printf("Digite um número de 1 a 12: ");
-scanf("%d", &n);
+do{
+    printf("\n ----- CONTROLE DE NOTAS -----\n");
+    printf("1 - Cadastrar notas\n");
+    printf("2 - Mostrar notas\n");
+    printf("3 - Média da turma\n");
+    printf("4 - Maior nota\n");
+    printf("0 - Sair\n");
+    scanf("%d", &opcao);
+    switch(opcao){
+        case 1:
+        cadastrar(notas);
+        cadastrado = 1;
+        break;
+        case 2:
+        if(cadastrado){
+            mostrar(notas);
+        }else{
+            printf("Nenhuma nota cadastrada ainda.\n");
+        }
+        break;
+        case 3:
+        if(cadastrado){
+            printf("Média da turma: %.2f\n", calcularMedia(notas));
+        }else{
+            printf("Nenhuma nota cadastrada ainda.\n");
+        }
+        break;
+        case 4:
+        if(cadastrado){
+            printf("Maior nota: %.1f\n", maiorNota(notas));
+        }else{
+            printf("Nenhuma nota cadastrada ainda.\n");
+        }
+        break;
+        case 0:
+        printf("Até mais!\n");
+        break;
+        default:
+        printf("Opção inválida!\n");
+        break;
+    }
+}while(opcao != 0);
 
-switch(n){
-    case 1://1  3  5 7  8  10  12
-    case 3:
-    case 5:
-    case 7:
-    case 8:
-    case 10:
-    case 12:
-    printf("O número de dias é: 31");
-    break;
-    case 4://4 || 6 || 9 || 11
-    case 6:
-    case 9:
-    case 11:
-    printf("O número de dias é 30");
-    break;
-    case 2:
-    printf("O número de dias é 28");
-    break;
-    default:
-    printf("Digite um número válido!");
-    break;
-}
 
 
 return 0;
