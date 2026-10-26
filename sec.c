@@ -1,11 +1,6 @@
 #include<stdio.h>
-#include<windows.h>
-
-
-
-float som(float a, float b){
-   return a + b;
-}
+#include<windows.h> 
+#include<string.h>
 
 
 int main(){
@@ -13,20 +8,13 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-float d, c;
+int horas;
 
-printf("Digite o primeiro número: ");
-scanf("%f", &d);
+printf("Digite horas em minutos: ");
+scanf("%d", &horas);
 
-printf("Digite o segundo número: ");
-scanf("%f", &c);
-
-printf("%.2f + %.2f = %.2f",d, c,  som(d, c));
+printf("%d horas e %d minutos", horas / 60, horas % 60);
 
 
-
-
-
-
-    return 0;
+return 0;
 }
