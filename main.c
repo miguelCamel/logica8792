@@ -4,19 +4,17 @@
 #include<stdlib.h>
 #include<time.h>
 
-void linha(){
-    printf("--------------------\n");
+void somar(int a, int b){
+    printf("Soma = %d\n", a + b);
 }
+
+
 
 int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-linha();
-printf("Meu nome é Miguel!\n");
-linha();
-
-
+somar(5, 2);
 
 return 0;
 
