@@ -4,14 +4,6 @@
 #include<stdlib.h>
 #include<time.h>
 
-void exibirMatriz(int m[][2]){
-    for(int i = 0; i < 2; i++){
-        for(int j = 0; j < 2; j++){
-            printf("%d", m[i][j]);
-        }
-        printf("\n");
-    }
-}
 
 
 int main(){
@@ -19,11 +11,28 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int m[2][2] = {
-    {1, 2},
-    {3, 4}
-};
+char placa[7];
+int op;
+char cadastro;
 
-exibirMatriz(m);
+do{
+printf("\n--- DETRAN ---\n 1-CADASTRAR\n 2-VER\n 3-SAIR\n");
+scanf("%d", &op);
+if(op == 1){
+    printf("Digite sua placa: ");
+    scanf("%s", placa);
+    
+}else if(op == 2){
+    printf("Sua placa é: %s ", placa);
+    
+}else{
+    printf("Digite um número válido!\n");
+}
+}while(op != 3);
+
+printf("\nPrograma finalizado");
+
 return 0;
+
+
 }
