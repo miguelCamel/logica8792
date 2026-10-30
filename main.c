@@ -4,21 +4,25 @@
 #include<stdlib.h>
 #include<time.h>
 
-#define PI 3.14159
-float area_circulo(float raio){
-    return PI * raio * raio;
+float media(float notas[], int n){
+    float soma = 0;
+    for(int i = 0; i < n; i++){
+        soma += notas[i];
+        
+    }
+    return soma / n;
 }
-
 
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-float r;
-printf("Raio: ");
-scanf("%f", &r);
-printf("Área: %.2f\n", area_circulo(r));
-
+float notas[5];
+for(int i = 0; i < 5; i++){
+    printf("Nota %d: ", i + 1);
+    scanf("%f", &notas[i]);
+}
+printf("Média: %.1f\n", media(notas, 5));
 return 0;
 
 
