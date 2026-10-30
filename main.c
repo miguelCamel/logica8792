@@ -4,19 +4,22 @@
 #include<stdlib.h>
 #include<time.h>
 
-int quadrado(int numero){
-    return numero * numero;
+void linha(int n){
+    for(int i = 0; i < n; i++){
+        printf("-");
+        printf("\n");
+    }
 }
+
+
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-int n;
+linha(30);
+printf("BEM-VINDO AO SISTEMA\n");
+linha(30);
 
-printf("Digite um número e veja o seu quadrado: ");
-scanf("%d", &n);
-
-printf("%d^2 = %d", n, quadrado(n));
 
 return 0;
 
