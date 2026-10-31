@@ -4,25 +4,20 @@
 #include<stdlib.h>
 #include<time.h>
 
-float media(float notas[], int n){
-    float soma = 0;
-    for(int i = 0; i < n; i++){
-        soma += notas[i];
-        
-    }
-    return soma / n;
-}
+
 
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-float notas[5];
+int numeros[5];
+int soma = 0;
 for(int i = 0; i < 5; i++){
-    printf("Nota %d: ", i + 1);
-    scanf("%f", &notas[i]);
+    printf("Digite o %d número: ", i + 1);
+    scanf("%d", &numeros[i]);
+    soma = soma + numeros[i];
 }
-printf("Média: %.1f\n", media(notas, 5));
+printf("\nSoma = %d\n", soma);
 return 0;
 
 
