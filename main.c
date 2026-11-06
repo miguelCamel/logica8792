@@ -4,19 +4,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-void contar(int numero){
-    if(numero == 0){
-        return;
+int fatorial(int numero){
+    if(numero == 0 || numero == 1){
+        return 1;
     }
-    printf("%d\n", numero);
-    contar(numero - 1);
+    return numero * fatorial(numero - 1);
 }
-
 
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-contar(5);
+int resultado = fatorial(5);
+printf("Fatorial: %d\n", resultado);
 
 return 0;
 }
