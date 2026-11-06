@@ -15,7 +15,9 @@ void tabuada(int numero, int contador){
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-tabuada(7, 1);
-
+int numero;
+printf("Digite um número: ");
+scanf("%d", &numero);
+tabuada(numero, 1);
 return 0;
 }
