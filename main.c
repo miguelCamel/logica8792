@@ -4,16 +4,19 @@
 #include<stdlib.h>
 #include<time.h>
 
-void contador(int numero){
-    for(int i = 1; i <= numero; i++){
-        printf("%d\n", i);
+int somar(int n){
+    if(n == 0){
+        return 0;
     }
+    return n + somar(n - 1);
 }
 
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-contador(5);
+int resultado = somar(5);
+printf("Resultado: %d\n", resultado);
+
 
 return 0;
 }
