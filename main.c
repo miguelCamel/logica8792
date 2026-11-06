@@ -4,20 +4,15 @@
 #include<stdlib.h>
 #include<time.h>
 
-void tabuada(int numero, int contador){
-    if(contador > 10){
-        return;
+int somarDigitos(int numero){
+    if(numero == 0){
+        return 0;
     }
-    printf("%d x %d = %d\n", numero, contador, numero * contador);
-
-    tabuada(numero, contador + 1);
+    return(numero % 10) + somarDigitos(numero / 10);
 }
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int numero;
-printf("Digite um número: ");
-scanf("%d", &numero);
-tabuada(numero, 1);
+printf("Soma: %d\n", somarDigitos(1234));
 return 0;
 }
