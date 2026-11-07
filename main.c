@@ -13,6 +13,10 @@ int inverter(int numero, int resultado){
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-printf("Invertido: %d\n", inverter(1234,0));
+int n;
+printf("Digite um número: ");
+scanf("%d", &n);
+
+printf("Invertido: %d\n", inverter(n, 0));
 return 0;
 }
