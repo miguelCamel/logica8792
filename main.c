@@ -4,24 +4,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-int palindromo(char palavra[], int inicio, int fim){
-    if(inicio >= fim){
-        return 1;
+void cont(int n){
+    if(n == 0){
+        return;
     }
-    if(palavra[inicio] != palavra[fim]){
-        return 0;
-    }
-    return palindromo(palavra, inicio + 1, fim - 1);
+    cont(n - 1);
+    printf("%d\n", n);
+
 }
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
+cont(5);
 
-char palavra[50] = "radar";
-if(palindromo(palavra, 0, strlen(palavra) - 1)){
-    printf("É palíndromo!\n");
-}else{
-    printf("Não é palíndromo!\n");
-}
 return 0;
 }
