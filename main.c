@@ -4,19 +4,21 @@
 #include<stdlib.h>
 #include<time.h>
 
-int inverter(int numero, int resultado){
-    if(numero == 0){
-        return resultado;
+int fibonacci(int n){
+    if(n == 0){
+        return 0;
     }
-    return inverter(numero / 10, resultado * 10 + numero % 10);
+    if(n == 1){
+        return 1;
+    }
+    return fibonacci(n -1) + fibonacci(n - 2);
 }
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n;
-printf("Digite um número: ");
-scanf("%d", &n);
-
-printf("Invertido: %d\n", inverter(n, 0));
+int i;
+for(i = 0; i < 10; i++){
+    printf("%d", fibonacci(i));
+}
 return 0;
 }
