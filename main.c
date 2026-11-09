@@ -5,12 +5,10 @@
 #include<time.h>
 
 void cont(int n){
-    if(n == 0){
-        return;
-    }
-    cont(n - 1);
-    printf("%d\n", n);
-
+for(int i = n; i >= 1; i--){
+printf("%d\n", i);
+}
+printf("Fogo!");
 }
 int main(){
 SetConsoleOutputCP(65001);
