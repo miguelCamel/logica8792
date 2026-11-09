@@ -4,21 +4,24 @@
 #include<stdlib.h>
 #include<time.h>
 
-float areaRetangulo(float base, float altura){
-    return base * altura;
-}
-int main(){
-SetConsoleOutputCP(65001);
-SetConsoleCP(65001);
-float b, a;
 
-printf("Digite a altura do seu Retangulo: ");
+float areaRetangulo(){
+    float b, a;
+    printf("Digite a altura do seu Retangulo: ");
 scanf("%f", &a);
 
 printf("Digite a base do seu Retangulo: ");
 scanf("%f", &b);
 
-printf("Área: %.2f\n", areaRetangulo(b, a));
+
+ return b * a;
+}
+
+int main(){
+SetConsoleOutputCP(65001);
+SetConsoleCP(65001);
+
+printf("Área: %.2f\n", areaRetangulo());
 
 
 return 0;
