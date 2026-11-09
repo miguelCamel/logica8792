@@ -4,16 +4,22 @@
 #include<stdlib.h>
 #include<time.h>
 
-void cont(int n){
-for(int i = n; i >= 1; i--){
-printf("%d\n", i);
-}
-printf("Fogo!");
+float areaRetangulo(float base, float altura){
+    return base * altura;
 }
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-cont(5);
+float b, a;
+
+printf("Digite a altura do seu Retangulo: ");
+scanf("%f", &a);
+
+printf("Digite a base do seu Retangulo: ");
+scanf("%f", &b);
+
+printf("Área: %.2f\n", areaRetangulo(b, a));
+
 
 return 0;
 }
