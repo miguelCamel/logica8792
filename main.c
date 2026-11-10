@@ -4,23 +4,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-int somaDigitos(int n){
-    int soma = 0;
-    while(n != 0){
-        soma += n % 10;
-        n /= 10;
-    }
-    return soma;
+int quadrado(int n){
+    return n * n;
 }
-
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-
 int numero;
-printf("Digite o número e descubra a soma dos digitos: ");
+
+printf("Digite o número do seu quadrado: ");
 scanf("%d", &numero);
-printf("Soma dos digitos é: %d\n", somaDigitos(numero));
+
+printf("%d^2 = %d", numero, quadrado(numero));
 
 
 
