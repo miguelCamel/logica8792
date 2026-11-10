@@ -4,22 +4,26 @@
 #include<stdlib.h>
 #include<time.h>
 
-int soma(int n){
-  int total = 0;
-  for(int i = 1; i <= n; i++){
-    total += i;
-  }
-   return total;
+int somaDigitos(int n){
+    int soma = 0;
+    while(n != 0){
+        soma += n % 10;
+        n /= 10;
+    }
+    return soma;
 }
 
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int num;
-printf("Digite um valor: ");
-scanf("%d", &num);
 
-printf("Soma de 1 até... %d\n", soma(num));
+int numero;
+printf("Digite o número e descubra a soma dos digitos: ");
+scanf("%d", &numero);
+printf("Soma dos digitos é: %d\n", somaDigitos(numero));
+
+
+
 
 return 0;
 }
