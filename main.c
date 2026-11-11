@@ -4,12 +4,8 @@
 #include<stdlib.h>
 #include<time.h>
 
-int somaPares(int n){
-    int soma = 0;
-    for(int i = 2; i <= n; i += 2){
-        soma += i;
-    }
-    return soma;
+int soma(int n1, int n2){
+    return n1 + n2;
 }
 
 
@@ -17,7 +13,7 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-printf("Soma dos pares até 10: %d\n", somaPares(10));
+soma(5, 6);
 
 
 return 0;
