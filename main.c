@@ -4,18 +4,21 @@
 #include<stdlib.h>
 #include<time.h>
 
-void cont(int n){
-    if(n == 0){
-        return;
-    }
-    cont(n - 1);
-    printf("%d\n", n);
 
-}
 int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-cont(5);
+
+int n;
+printf("Digite N: ");
+scanf("%d", &n);
+
+for(int i = 1; i <= n; i++){
+    for(int j = 1; j <= n; j++){
+        printf("* ");
+    }
+    printf("\n");
+}
 
 return 0;
 }
