@@ -8,15 +8,15 @@ int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-    int total = 0;
-    for(int i = 1; i <= 100; i++){
-        if(i % 10 == 7){
+int soma = 0;
+for(int i = 1; i <= 50; i++){
+    if(i % 2 == 1){
         printf("%d\n", i);
-         total++;
-    
+        soma += i;
     }
-   
+    
 }
-printf("Total igual a %d", total);
+printf("A soma dos impares é: %d", soma);
+
 return 0;
 }
