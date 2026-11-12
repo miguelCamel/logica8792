@@ -7,14 +7,16 @@
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
-
 int total = 0;
-  for(int i = 1; i <= 100; i++){
-    if(i % 10 == 5 || i % 10 == 0){
+for(int i = 1; i <= 100; i++){
+    int dezena = i / 10;
+    int unidade = i % 10;
+    if(dezena + unidade == 10){
         printf("%d\n", i);
         total++;
     }
-  }
-  printf("\nTotal: %d\n", total);
+    
+}
+printf("Total: %d\n", total);
 return 0;
 }
