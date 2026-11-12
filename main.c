@@ -8,15 +8,12 @@ int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-int soma = 0;
-for(int i = 1; i <= 50; i++){
-    if(i % 2 == 1){
-        printf("%d\n", i);
-        soma += i;
+int total = 0;
+for(int i = 1; i <= 1000; i++){
+    if(i % 7 == 0 && i % 2 != 0){
+        total++;
     }
-    
 }
-printf("A soma dos impares é: %d", soma);
-
+printf("Divisiveis por 7 e não por 2: %d\n", total);
 return 0;
 }
