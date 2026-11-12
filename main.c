@@ -9,8 +9,8 @@ int main(){
     SetConsoleCP(65001);
 
 int total = 0;
-  for(int i = 1; i <= 200; i++){
-    if(i % 10 == 3){
+  for(int i = 1; i <= 100; i++){
+    if(i % 10 == 5 || i % 10 == 0){
         printf("%d\n", i);
         total++;
     }
