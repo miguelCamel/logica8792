@@ -1,5 +1,7 @@
 a = 10
 b = 20
 soma = a + b
-print("Soma: ")
-print(soma)
+print("A soma é: ", str(soma))
+
+a, b = b, a
+print("Agora a é: ", a, "e b é ", b )
