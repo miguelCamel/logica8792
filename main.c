@@ -7,10 +7,14 @@
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
-for(int i = 1; i <= 100; i++){
-    if(i % 4 == 0){
+int total = 0;
+
+for(int i = 1; i <= 500; i++){
+    if(i % 10 == 7 && i % 3 == 0){
         printf("%d\n", i);
+        total++;
     }
 }
+printf("\nTotal: %d\n", total);
 return 0;
 }
