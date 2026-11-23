@@ -18,4 +18,5 @@ match dia_semana:
         resposta = "Sábado"
     case _:
         resposta = "Número inválido"
-print(f"A resposta é: {resposta}")
+print(f"A resposta para o número do {dia_semana} é: {resposta}")
+print("=" * 50)
