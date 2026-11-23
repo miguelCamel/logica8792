@@ -10,3 +10,5 @@ try:
         print(f"A média entre {valor1} e {valor2} é {media}. Reprovado!")
 except ValueError:
     print("Foram digitados valores inválidos!")
+except KeyboardInterrupt:
+    print("Programa encerrado pelo usuário")
