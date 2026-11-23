@@ -7,14 +7,16 @@
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
-int total = 0;
 
-for(int i = 1; i <= 500; i++){
-    if(i % 10 == 7 && i % 3 == 0){
-        printf("%d\n", i);
-        total++;
-    }
-}
-printf("\nTotal: %d\n", total);
+    int n, m, l;
+    int soma = 0;
+
+    printf("digite 3 numeros:");
+    scanf("%d %d %d", &n, &m, &l);
+
+    soma = (n + m + l) / 3;
+
+    printf("a media é: %d", soma);
+
 return 0;
 }
