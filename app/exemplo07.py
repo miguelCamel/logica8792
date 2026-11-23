@@ -1,6 +1,15 @@
-while True:
-    try:
-        numero = float(input("Digite um número: "))
-        break
-    except ValueError:
-        print("Valor inválido. Porfavor, digite um número válido.")
+try:
+    num1 = float(input("Digite o primeiro valor: "))
+    num2 = float(input("Digite o segundo valor: "))
+    num3 = float(input("Digite o terceiro valor: "))
+
+    if num1 > num2 and num1 > num3:
+        print(f"O maior número é o {num1} ")
+    elif num2 > num1 and num2 > num3:
+        print(f"O maior número é {num2}")
+    elif num3 > num1 and num3 > num2:
+        print(f"O maior número é o {num3}")
+    else:
+        print("Todos os números são iguais!")
+except ValueError:
+    print("Valores inválidos!")
