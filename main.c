@@ -8,15 +8,14 @@ int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-    int n, m, l;
-    int soma = 0;
+int n;
 
-    printf("digite 3 numeros:");
-    scanf("%d %d %d", &n, &m, &l);
+do{
 
-    soma = (n + m + l) / 3;
+printf("Digite um número: ");
+scanf("%d", &n);
 
-    printf("a media é: %d", soma);
+}while(n < 0);
 
 return 0;
 }

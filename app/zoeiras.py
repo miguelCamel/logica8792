@@ -1,2 +1,3 @@
-for i in range(0, 10):
-    print("Lucas bonitão")
+num1 = float(input("Digite o primeiro valor: "))
+num2 = float(input("Digite o segundo valor: "))
+
